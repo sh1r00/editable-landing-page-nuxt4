@@ -1,0 +1,282 @@
+{
+  "site": {
+    "name": "Sh1r00 Digital",
+    "tagline": "Soluciones Digitales Premium"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "title": "Transforma Tu Presencia Digital",
+    "subtitle": "Creamos sitios web impresionantes y soluciones digitales que impulsan el crecimiento de tu negocio.",
+    "cta": "Inicia Tu Proyecto",
+    "secondaryCta": "Ver Nuestro Trabajo",
+    "formName": "Nombre",
+    "formEmail": "Correo Electrónico",
+    "formMessage": "Cuéntanos sobre tu proyecto",
+    "formSubmit": "Obtén Consulta Gratuita",
+    "formPlaceholderName": "Tu nombre",
+    "formPlaceholderEmail": "tu.email en dominio.com",
+    "formPlaceholderMessage": "Necesito ayuda con..."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones digitales integrales adaptadas a tus necesidades",
+    "items": [
+      {
+        "title": "Desarrollo Web",
+        "description": "Sitios web personalizados con tecnología de punta para un rendimiento óptimo.",
+        "icon": "code"
+      },
+      {
+        "title": "Diseño UI/UX",
+        "description": "Diseño centrado en el usuario que crea experiencias digitales intuitivas.",
+        "icon": "design"
+      },
+      {
+        "title": "Optimización SEO",
+        "description": "Estrategias basadas en datos para mejorar tu posicionamiento en buscadores.",
+        "icon": "search"
+      },
+      {
+        "title": "Apps Móviles",
+        "description": "Aplicaciones nativas y multiplataforma que los usuarios adoran.",
+        "icon": "mobile"
+      },
+      {
+        "title": "Estrategia de Marca",
+        "description": "Desarrollo integral de marca desde identidad hasta posicionamiento.",
+        "icon": "brand"
+      },
+      {
+        "title": "Soluciones Cloud",
+        "description": "Infraestructura escalable y DevOps para despliegue confiable.",
+        "icon": "cloud"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Nuestro Trabajo",
+    "subtitle": "Proyectos recientes que muestran nuestra experiencia",
+    "items": [
+      {
+        "title": "Plataforma E-Commerce",
+        "category": "Desarrollo Web",
+        "description": "Marketplace completo con más de 10K productos"
+      },
+      {
+        "title": "App de Salud",
+        "category": "Apps Móviles",
+        "description": "Sistema de gestión de pacientes para clínicas"
+      },
+      {
+        "title": "Dashboard FinTech",
+        "category": "Diseño UI/UX",
+        "description": "Plataforma de análisis financiero en tiempo real"
+      },
+      {
+        "title": "Cadena de Restaurantes",
+        "category": "Estrategia de Marca",
+        "description": "Rebranding completo para más de 50 ubicaciones"
+      },
+      {
+        "title": "Plataforma EdTech",
+        "category": "Desarrollo Web",
+        "description": "Plataforma de aprendizaje para más de 100K estudiantes"
+      },
+      {
+        "title": "Rastreador Logístico",
+        "category": "Soluciones Cloud",
+        "description": "Seguimiento de flotas en tiempo real"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "subtitle": "Con la confianza de empresas en todo el mundo",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "role": "CEO, TechVentures Inc.",
+        "quote": "Sh1r00 transformó completamente nuestra presencia en línea. Nuestra tasa de conversión aumentó un 200%.",
+        "rating": 5
+      },
+      {
+        "name": "Michael Chen",
+        "role": "Fundador, GreenLeaf Co.",
+        "quote": "El equipo superó las expectativas. Profesional, puntual e increíblemente talentoso.",
+        "rating": 5
+      },
+      {
+        "name": "Emily Rodriguez",
+        "role": "Directora de Marketing, ApexGlobal",
+        "quote": "Trabajo excepcional en nuestro rediseño de marca. La nueva identidad captura perfectamente nuestra visión.",
+        "rating": 5
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Planes de Precios",
+    "subtitle": "Elige el plan que se adapte a tus necesidades",
+    "cta": "Comenzar",
+    "tiers": [
+      {
+        "name": "Inicial",
+        "price": "$999",
+        "period": "/proyecto",
+        "description": "Perfecto para pequeños negocios que comienzan",
+        "features": [
+          "Sitio de 5 Páginas",
+          "Diseño Responsivo",
+          "Formulario de Contacto",
+          "SEO Básico",
+          "1 Mes de Soporte"
+        ],
+        "highlighted": false
+      },
+      {
+        "name": "Profesional",
+        "price": "$2,999",
+        "period": "/proyecto",
+        "description": "Para negocios en crecimiento que necesitan más",
+        "features": [
+          "Sitio de 10 Páginas",
+          "Diseño Personalizado",
+          "Integración CMS",
+          "SEO Avanzado",
+          "3 Meses de Soporte",
+          "Configuración Analytics"
+        ],
+        "highlighted": true
+      },
+      {
+        "name": "Empresarial",
+        "price": "$5,999",
+        "period": "/proyecto",
+        "description": "Para proyectos de gran escala y organizaciones",
+        "features": [
+          "Páginas Ilimitadas",
+          "Desarrollo Personalizado",
+          "Integraciones API",
+          "Paquete SEO Premium",
+          "12 Meses de Soporte",
+          "PM Dedicado"
+        ],
+        "highlighted": false
+      }
+    ]
+  },
+  "team": {
+    "title": "Conoce a Nuestro Equipo",
+    "subtitle": "Profesionales talentosos dedicados a tu éxito",
+    "members": [
+      {
+        "name": "Alex Thompson",
+        "role": "Desarrollador Líder",
+        "bio": "Más de 10 años creando soluciones web escalables"
+      },
+      {
+        "name": "Maria Santos",
+        "role": "Diseñadora UX",
+        "bio": "Creando experiencias intuitivas desde 2015"
+      },
+      {
+        "name": "David Park",
+        "role": "Gerente de Proyecto",
+        "bio": "Asegurando que los proyectos se entreguen a tiempo"
+      },
+      {
+        "name": "Lisa Wang",
+        "role": "Estratega SEO",
+        "bio": "Ayudando a negocios a posicionarse #1 en Google"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Listo para comenzar tu proyecto? Nos encantaría saber de ti.",
+    "formName": "Nombre Completo",
+    "formEmail": "Correo Electrónico",
+    "formSubject": "Asunto",
+    "formMessage": "Mensaje",
+    "formSubmit": "Enviar Mensaje",
+    "formSuccess": "¡Gracias! Te responderemos dentro de 24 horas.",
+    "address": "123 Business Ave, Suite 100, San Francisco, CA 94107",
+    "phone": "+1 (555) 123-4567",
+    "email": "hello en sh1r00.com"
+  },
+  "footer": {
+    "description": "Soluciones digitales premium para negocios modernos. Te ayudamos a crecer, escalar y triunfar en línea.",
+    "services": "Servicios",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "rights": "Todos los derechos reservados.",
+    "newsletterPlaceholder": "Ingresa tu correo",
+    "newsletterButton": "Suscribirse"
+  },
+  "about": {
+    "title": "Nuestra Historia",
+    "subtitle": "Somos un equipo de expertos digitales apasionados comprometidos con resultados excepcionales.",
+    "mission": "Nuestra Misión",
+    "missionText": "Empoderar a las empresas con soluciones digitales innovadoras que impulsen el crecimiento.",
+    "vision": "Nuestra Visión",
+    "visionText": "Ser el socio digital más confiable para empresas en todo el mundo, conocido por calidad e innovación.",
+    "values": "Nuestros Valores",
+    "valuesList": [
+      {
+        "title": "Excelencia",
+        "description": "Nos exigimos los más altos estándares en todo lo que hacemos."
+      },
+      {
+        "title": "Innovación",
+        "description": "Adoptamos nuevas tecnologías y enfoques creativos para resolver problemas."
+      },
+      {
+        "title": "Integridad",
+        "description": "Construimos confianza a través de transparencia, honestidad y prácticas éticas."
+      },
+      {
+        "title": "Colaboración",
+        "description": "Trabajamos estrechamente con nuestros clientes como verdaderos socios."
+      }
+    ],
+    "stats": [
+      {
+        "value": "200+",
+        "label": "Proyectos Completados"
+      },
+      {
+        "value": "50+",
+        "label": "Miembros del Equipo"
+      },
+      {
+        "value": "98%",
+        "label": "Satisfacción del Cliente"
+      },
+      {
+        "value": "12+",
+        "label": "Años de Experiencia"
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para Construir Algo Increíble?",
+    "subtitle": "Hablemos de tu proyecto y creemos una experiencia digital que destaque.",
+    "button": "Agenda Consulta Gratuita"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error. Por favor intenta de nuevo.",
+    "back": "Volver",
+    "learnMore": "Más Información",
+    "viewAll": "Ver Todo",
+    "switchLanguage": "Cambiar idioma",
+    "darkMode": "Modo oscuro"
+  }
+}
