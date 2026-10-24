@@ -277,6 +277,13 @@
     "learnMore": "Learn More",
     "viewAll": "View All",
     "switchLanguage": "Switch Language",
-    "darkMode": "Dark Mode"
+    "darkMode": "Dark Mode",
+    "lightMode": "Light mode"
+  },
+  "pwa": {
+    "heading": "Install this app",
+    "description": "Install this app for offline access and a faster, app-like experience.",
+    "install": "Install",
+    "dismiss": "Dismiss"
   }
 }

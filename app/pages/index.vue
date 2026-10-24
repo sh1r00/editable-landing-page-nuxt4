@@ -5,14 +5,14 @@
       <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-white/50 dark:from-primary-950/90 dark:via-primary-950/70 dark:to-primary-950/50" aria-hidden="true" />
       <div class="container-narrow hero__grid relative">
         <div class="hero__content">
-          <h1 id="hero-heading" class="hero__title">{{ $t('hero.title') }}</h1>
-          <p class="hero__subtitle">{{ $t('hero.subtitle') }}</p>
+          <h1 id="hero-heading" class="hero__title">{{ t('hero.title') }}</h1>
+          <p class="hero__subtitle">{{ t('hero.subtitle') }}</p>
           <div class="hero__ctas">
             <ABaseButton variant="primary" size="lg" @click="scrollToContact">
-              {{ $t('hero.cta') }}
+              {{ t('hero.cta') }}
             </ABaseButton>
             <ABaseButton variant="outline" size="lg" @click="scrollTo('portfolio')">
-              {{ $t('hero.secondaryCta') }}
+              {{ t('hero.secondaryCta') }}
             </ABaseButton>
           </div>
           <div class="hero__trust">
@@ -24,31 +24,31 @@
         </div>
         <div class="hero__form-wrapper">
           <ACard>
-            <form class="hero__form" @submit.prevent="handleHeroForm" :aria-label="$t('hero.formSubmit')">
+            <form class="hero__form" @submit.prevent="handleHeroForm" :aria-label="t('hero.formSubmit')">
               <h3 class="hero__form-title">Get a Free Consultation</h3>
               <MFormField
                 id="hero-name"
-                :label="$t('hero.formName')"
+                :label="t('hero.formName')"
                 v-model="heroForm.name"
-                :placeholder="$t('hero.formPlaceholderName')"
+                :placeholder="t('hero.formPlaceholderName')"
                 required
               />
               <MFormField
                 id="hero-email"
-                :label="$t('hero.formEmail')"
+                :label="t('hero.formEmail')"
                 v-model="heroForm.email"
                 type="email"
-                :placeholder="$t('hero.formPlaceholderEmail')"
+                :placeholder="t('hero.formPlaceholderEmail')"
                 required
               />
               <MFormField
                 id="hero-message"
-                :label="$t('hero.formMessage')"
+                :label="t('hero.formMessage')"
                 v-model="heroForm.message"
-                :placeholder="$t('hero.formPlaceholderMessage')"
+                :placeholder="t('hero.formPlaceholderMessage')"
               />
               <ABaseButton variant="primary" type="submit" full-width>
-                {{ $t('hero.formSubmit') }}
+                {{ t('hero.formSubmit') }}
                 <AIcon name="arrow-right" size="sm" />
               </ABaseButton>
             </form>
@@ -61,8 +61,8 @@
     <section id="services" class="services section" aria-labelledby="services-heading" style="background-color: var(--color-bg-alt)">
       <div class="container-narrow">
         <div class="section-header">
-          <h2 id="services-heading">{{ $t('services.title') }}</h2>
-          <p class="section-subtitle">{{ $t('services.subtitle') }}</p>
+          <h2 id="services-heading">{{ t('services.title') }}</h2>
+          <p class="section-subtitle">{{ t('services.subtitle') }}</p>
         </div>
         <div class="services__grid">
           <MServiceCard
@@ -80,8 +80,8 @@
     <section id="portfolio" class="portfolio section" aria-labelledby="portfolio-heading">
       <div class="container-narrow">
         <div class="section-header">
-          <h2 id="portfolio-heading">{{ $t('portfolio.title') }}</h2>
-          <p class="section-subtitle">{{ $t('portfolio.subtitle') }}</p>
+          <h2 id="portfolio-heading">{{ t('portfolio.title') }}</h2>
+          <p class="section-subtitle">{{ t('portfolio.subtitle') }}</p>
         </div>
         <div class="portfolio__grid">
           <ACard v-for="item in portfolioList" :key="item.title" hoverable class="portfolio__card">
@@ -100,8 +100,8 @@
     <section id="testimonials" class="testimonials section" aria-labelledby="testimonials-heading" style="background-color: var(--color-bg-alt)">
       <div class="container-narrow">
         <div class="section-header">
-          <h2 id="testimonials-heading">{{ $t('testimonials.title') }}</h2>
-          <p class="section-subtitle">{{ $t('testimonials.subtitle') }}</p>
+          <h2 id="testimonials-heading">{{ t('testimonials.title') }}</h2>
+          <p class="section-subtitle">{{ t('testimonials.subtitle') }}</p>
         </div>
         <div class="testimonials__carousel" role="region" aria-label="Testimonials" aria-roledescription="carousel">
           <button
@@ -146,8 +146,8 @@
     <section id="pricing" class="pricing section" aria-labelledby="pricing-heading">
       <div class="container-narrow">
         <div class="section-header">
-          <h2 id="pricing-heading">{{ $t('pricing.title') }}</h2>
-          <p class="section-subtitle">{{ $t('pricing.subtitle') }}</p>
+          <h2 id="pricing-heading">{{ t('pricing.title') }}</h2>
+          <p class="section-subtitle">{{ t('pricing.subtitle') }}</p>
         </div>
         <div class="pricing__grid">
           <ACard
@@ -174,7 +174,7 @@
               full-width
               @click="scrollToContact"
             >
-              {{ $t('pricing.cta') }}
+              {{ t('pricing.cta') }}
             </ABaseButton>
           </ACard>
         </div>
@@ -185,8 +185,8 @@
     <section id="team" class="team section" aria-labelledby="team-heading" style="background-color: var(--color-bg-alt)">
       <div class="container-narrow">
         <div class="section-header">
-          <h2 id="team-heading">{{ $t('team.title') }}</h2>
-          <p class="section-subtitle">{{ $t('team.subtitle') }}</p>
+          <h2 id="team-heading">{{ t('team.title') }}</h2>
+          <p class="section-subtitle">{{ t('team.subtitle') }}</p>
         </div>
         <div class="team__grid">
           <MTeamMember
@@ -204,8 +204,8 @@
     <section id="contact" class="quick-contact section" aria-labelledby="contact-heading">
       <div class="container-narrow">
         <div class="section-header">
-          <h2 id="contact-heading">{{ $t('contact.title') }}</h2>
-          <p class="section-subtitle">{{ $t('contact.subtitle') }}</p>
+          <h2 id="contact-heading">{{ t('contact.title') }}</h2>
+          <p class="section-subtitle">{{ t('contact.subtitle') }}</p>
         </div>
         <div class="quick-contact__grid">
           <div class="quick-contact__info">
@@ -232,27 +232,27 @@
             </div>
           </div>
           <ACard>
-            <form class="quick-contact__form" @submit.prevent="handleContactForm" :aria-label="$t('contact.formSubmit')">
+            <form class="quick-contact__form" @submit.prevent="handleContactForm" :aria-label="t('contact.formSubmit')">
               <MFormField
                 id="qc-name"
-                :label="$t('contact.formName')"
+                :label="t('contact.formName')"
                 v-model="contactForm.name"
                 required
               />
               <MFormField
                 id="qc-email"
-                :label="$t('contact.formEmail')"
+                :label="t('contact.formEmail')"
                 v-model="contactForm.email"
                 type="email"
                 required
               />
               <MFormField
                 id="qc-message"
-                :label="$t('contact.formMessage')"
+                :label="t('contact.formMessage')"
                 v-model="contactForm.message"
               />
               <ABaseButton variant="primary" type="submit" full-width>
-                {{ $t('contact.formSubmit') }}
+                {{ t('contact.formSubmit') }}
               </ABaseButton>
             </form>
           </ACard>
@@ -263,10 +263,10 @@
     <!-- ===== CTA SECTION ===== -->
     <section class="cta-section" aria-labelledby="cta-heading">
       <div class="container-narrow cta-section__inner">
-        <h2 id="cta-heading">{{ $t('cta.title') }}</h2>
-        <p>{{ $t('cta.subtitle') }}</p>
+        <h2 id="cta-heading">{{ t('cta.title') }}</h2>
+        <p>{{ t('cta.subtitle') }}</p>
         <ABaseButton variant="secondary" size="lg" @click="scrollToContact">
-          {{ $t('cta.button') }}
+          {{ t('cta.button') }}
         </ABaseButton>
       </div>
     </section>

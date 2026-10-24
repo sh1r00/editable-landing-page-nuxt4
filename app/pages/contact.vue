@@ -3,8 +3,8 @@
     <!-- Hero -->
     <section class="contact-hero section" aria-labelledby="contact-heading">
       <div class="container-narrow">
-        <h1 id="contact-heading">{{ $t('contact.title') }}</h1>
-        <p class="contact-hero__subtitle">{{ $t('contact.subtitle') }}</p>
+        <h1 id="contact-heading">{{ t('contact.title') }}</h1>
+        <p class="contact-hero__subtitle">{{ t('contact.subtitle') }}</p>
       </div>
     </section>
 
@@ -13,36 +13,36 @@
       <div class="container-narrow contact-content__grid">
         <!-- Form -->
         <ACard>
-          <form class="contact-content__form" @submit.prevent="handleSubmit" :aria-label="$t('contact.formSubmit')">
+          <form class="contact-content__form" @submit.prevent="handleSubmit" :aria-label="t('contact.formSubmit')">
             <MFormField
               id="contact-name"
-              :label="$t('contact.formName')"
+              :label="t('contact.formName')"
               v-model="form.name"
               required
             />
             <MFormField
               id="contact-email"
-              :label="$t('contact.formEmail')"
+              :label="t('contact.formEmail')"
               v-model="form.email"
               type="email"
               required
             />
             <MFormField
               id="contact-subject"
-              :label="$t('contact.formSubject')"
+              :label="t('contact.formSubject')"
               v-model="form.subject"
             />
             <MFormField
               id="contact-message"
-              :label="$t('contact.formMessage')"
+              :label="t('contact.formMessage')"
               v-model="form.message"
             />
             <ABaseButton variant="primary" type="submit" full-width>
-              {{ $t('contact.formSubmit') }}
+              {{ t('contact.formSubmit') }}
             </ABaseButton>
             <Transition name="fade">
               <p v-if="submitted" class="contact-content__success" role="status">
-                {{ $t('contact.formSuccess') }}
+                {{ t('contact.formSuccess') }}
               </p>
             </Transition>
           </form>
@@ -89,10 +89,10 @@
     <!-- CTA -->
     <section class="cta-section" aria-labelledby="contact-cta-heading">
       <div class="container-narrow cta-section__inner">
-        <h2 id="contact-cta-heading">{{ $t('cta.title') }}</h2>
-        <p>{{ $t('cta.subtitle') }}</p>
+        <h2 id="contact-cta-heading">{{ t('cta.title') }}</h2>
+        <p>{{ t('cta.subtitle') }}</p>
         <ABaseButton variant="secondary" size="lg" @click="scrollToForm">
-          {{ $t('cta.button') }}
+          {{ t('cta.button') }}
         </ABaseButton>
       </div>
     </section>
@@ -100,6 +100,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 import { contactInfo } from '~/data/content'
 
 const contactData = contactInfo

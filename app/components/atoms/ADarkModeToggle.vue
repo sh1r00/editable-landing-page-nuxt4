@@ -1,7 +1,7 @@
 <template>
   <button
     class="dark-mode-toggle"
-    :aria-label="isDark ? $t('common.lightMode') || 'Switch to light mode' : $t('common.darkMode') || 'Switch to dark mode'"
+    :aria-label="isDark ? t('common.lightMode') || 'Switch to light mode' : t('common.darkMode') || 'Switch to dark mode'"
     @click="darkMode.toggle()"
   >
     <AIcon :name="isDark ? 'sun' : 'moon'" size="md" />
@@ -9,6 +9,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 import { computed } from 'vue'
 import { useDarkModeStore } from '~/stores/darkMode'
 import AIcon from '~/components/atoms/AIcon.vue'

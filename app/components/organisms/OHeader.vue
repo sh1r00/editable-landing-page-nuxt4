@@ -2,7 +2,7 @@
   <header class="o-header" role="banner">
     <nav class="o-header__nav container-narrow" aria-label="Main navigation">
       <!-- Logo -->
-      <NuxtLink to="/" class="o-header__logo" :aria-label="$t('site.name')">
+      <NuxtLink to="/" class="o-header__logo" :aria-label="t('site.name')">
         <span class="o-header__logo-icon">S</span>
         <span class="o-header__logo-text">Sh1r00</span>
       </NuxtLink>
@@ -27,7 +27,7 @@
         <div class="o-header__locale">
           <button
             class="o-header__locale-btn"
-            :aria-label="$t('common.switchLanguage') || 'Switch language'"
+            :aria-label="t('common.switchLanguage') || 'Switch language'"
             @click="showLocales = !showLocales"
             :aria-expanded="showLocales"
             aria-haspopup="true"
@@ -89,6 +89,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 import { useI18n } from 'vue-i18n'
 import { computed, ref, watch } from 'vue'
 import { navLinks } from '~/data/content'

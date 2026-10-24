@@ -3,8 +3,8 @@
     <!-- Hero -->
     <section class="about-hero section" aria-labelledby="about-heading">
       <div class="container-narrow">
-        <h1 id="about-heading">{{ $t('about.title') }}</h1>
-        <p class="about-hero__subtitle">{{ $t('about.subtitle') }}</p>
+        <h1 id="about-heading">{{ t('about.title') }}</h1>
+        <p class="about-hero__subtitle">{{ t('about.subtitle') }}</p>
       </div>
     </section>
 
@@ -15,15 +15,15 @@
           <div class="about-mv__icon">
             <AIcon name="brand" size="xl" />
           </div>
-          <h3 id="mv-heading">{{ $t('about.mission') }}</h3>
-          <p>{{ $t('about.missionText') }}</p>
+          <h3 id="mv-heading">{{ t('about.mission') }}</h3>
+          <p>{{ t('about.missionText') }}</p>
         </ACard>
         <ACard hoverable>
           <div class="about-mv__icon">
             <AIcon name="search" size="xl" />
           </div>
-          <h3>{{ $t('about.vision') }}</h3>
-          <p>{{ $t('about.visionText') }}</p>
+          <h3>{{ t('about.vision') }}</h3>
+          <p>{{ t('about.visionText') }}</p>
         </ACard>
       </div>
     </section>
@@ -32,7 +32,7 @@
     <section class="about-values section" aria-labelledby="values-heading">
       <div class="container-narrow">
         <div class="section-header">
-          <h2 id="values-heading">{{ $t('about.values') }}</h2>
+          <h2 id="values-heading">{{ t('about.values') }}</h2>
         </div>
         <div class="about-values__grid">
           <ACard v-for="value in valuesList" :key="value.title" hoverable class="about-values__card">
@@ -56,10 +56,10 @@
     <!-- CTA -->
     <section class="cta-section" aria-labelledby="about-cta-heading">
       <div class="container-narrow cta-section__inner">
-        <h2 id="about-cta-heading">{{ $t('cta.title') }}</h2>
-        <p>{{ $t('cta.subtitle') }}</p>
+        <h2 id="about-cta-heading">{{ t('cta.title') }}</h2>
+        <p>{{ t('cta.subtitle') }}</p>
         <ABaseButton variant="secondary" size="lg" @click="navigateTo('/contact')">
-          {{ $t('cta.button') }}
+          {{ t('cta.button') }}
         </ABaseButton>
       </div>
     </section>

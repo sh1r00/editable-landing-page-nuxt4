@@ -1,8 +1,12 @@
+<script setup lang="ts">
+const { t } = useI18n()
+</script>
+
 <template>
   <div class="legal-page">
     <section class="legal-hero section">
       <div class="container-narrow">
-        <h1>{{ $t('footer.terms') }}</h1>
+        <h1>{{ t('footer.terms') }}</h1>
         <p class="legal-date">Last updated: January 1, 2025</p>
       </div>
     </section>

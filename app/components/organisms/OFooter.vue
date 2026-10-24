@@ -8,12 +8,12 @@
             <span class="o-footer__logo-icon">S</span>
             <span class="o-footer__logo-text">Sh1r00</span>
           </NuxtLink>
-          <p class="o-footer__description">{{ $t('footer.description') }}</p>
+          <p class="o-footer__description">{{ t('footer.description') }}</p>
         </div>
 
         <!-- Services -->
         <div class="o-footer__col">
-          <h4 class="o-footer__heading">{{ $t('footer.services') }}</h4>
+          <h4 class="o-footer__heading">{{ t('footer.services') }}</h4>
           <ul class="o-footer__list" role="list">
             <li><NuxtLink to="/#services" class="o-footer__link">Web Development</NuxtLink></li>
             <li><NuxtLink to="/#services" class="o-footer__link">UI/UX Design</NuxtLink></li>
@@ -24,40 +24,40 @@
 
         <!-- Company -->
         <div class="o-footer__col">
-          <h4 class="o-footer__heading">{{ $t('footer.company') }}</h4>
+          <h4 class="o-footer__heading">{{ t('footer.company') }}</h4>
           <ul class="o-footer__list" role="list">
-            <li><NuxtLink to="/about" class="o-footer__link">{{ $t('nav.about') }}</NuxtLink></li>
-            <li><NuxtLink to="/#pricing" class="o-footer__link">{{ $t('pricing.title') }}</NuxtLink></li>
-            <li><NuxtLink to="/#team" class="o-footer__link">{{ $t('team.title') }}</NuxtLink></li>
-            <li><NuxtLink to="/contact" class="o-footer__link">{{ $t('nav.contact') }}</NuxtLink></li>
+            <li><NuxtLink to="/about" class="o-footer__link">{{ t('nav.about') }}</NuxtLink></li>
+            <li><NuxtLink to="/#pricing" class="o-footer__link">{{ t('pricing.title') }}</NuxtLink></li>
+            <li><NuxtLink to="/#team" class="o-footer__link">{{ t('team.title') }}</NuxtLink></li>
+            <li><NuxtLink to="/contact" class="o-footer__link">{{ t('nav.contact') }}</NuxtLink></li>
           </ul>
         </div>
 
         <!-- Legal -->
         <div class="o-footer__col">
-          <h4 class="o-footer__heading">{{ $t('footer.legal') }}</h4>
+          <h4 class="o-footer__heading">{{ t('footer.legal') }}</h4>
           <ul class="o-footer__list" role="list">
-            <li><NuxtLink to="/privacy" class="o-footer__link">{{ $t('footer.privacy') }}</NuxtLink></li>
-            <li><NuxtLink to="/terms" class="o-footer__link">{{ $t('footer.terms') }}</NuxtLink></li>
+            <li><NuxtLink to="/privacy" class="o-footer__link">{{ t('footer.privacy') }}</NuxtLink></li>
+            <li><NuxtLink to="/terms" class="o-footer__link">{{ t('footer.terms') }}</NuxtLink></li>
           </ul>
         </div>
 
         <!-- Newsletter -->
         <div class="o-footer__newsletter">
-          <h4 class="o-footer__heading">{{ $t('cta.button') || 'Stay Updated' }}</h4>
+          <h4 class="o-footer__heading">{{ t('cta.button') || 'Stay Updated' }}</h4>
           <form class="o-footer__form" @submit.prevent="handleSubscribe" aria-label="Newsletter subscription">
-            <label for="footer-email" class="sr-only">{{ $t('footer.newsletterPlaceholder') }}</label>
+            <label for="footer-email" class="sr-only">{{ t('footer.newsletterPlaceholder') }}</label>
             <div class="o-footer__form-row">
               <AInput
                 id="footer-email"
                 v-model="email"
                 type="email"
-                :placeholder="$t('footer.newsletterPlaceholder')"
-                :aria-label="$t('footer.newsletterPlaceholder')"
+                :placeholder="t('footer.newsletterPlaceholder')"
+                :aria-label="t('footer.newsletterPlaceholder')"
                 required
               />
-              <ABaseButton variant="primary" size="sm" type="submit" :aria-label="$t('footer.newsletterButton')">
-                {{ $t('footer.newsletterButton') }}
+              <ABaseButton variant="primary" size="sm" type="submit" :aria-label="t('footer.newsletterButton')">
+                {{ t('footer.newsletterButton') }}
               </ABaseButton>
             </div>
           </form>
@@ -67,7 +67,7 @@
       <!-- Bottom bar -->
       <div class="o-footer__bottom">
         <p class="o-footer__copyright">
-          &copy; {{ new Date().getFullYear() }} Sh1r00 Digital. {{ $t('footer.rights') }}
+          &copy; {{ new Date().getFullYear() }} Sh1r00 Digital. {{ t('footer.rights') }}
         </p>
         <p class="o-footer__credit">Designed by sh1r00</p>
       </div>
@@ -76,6 +76,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 import { ref } from 'vue'
 import AInput from '~/components/atoms/AInput.vue'
 import ABaseButton from '~/components/atoms/ABaseButton.vue'

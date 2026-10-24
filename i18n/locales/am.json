@@ -277,6 +277,13 @@
     "learnMore": "ተጨማሪ ይወቁ",
     "viewAll": "ሁሉንም ይመልከቱ",
     "switchLanguage": "ቋንቋ ቀይር",
-    "darkMode": "የጨለማ ሁነታ"
+    "darkMode": "የጨለማ ሁነታ",
+    "lightMode": "የብርሃን ሁነታ"
+  },
+  "pwa": {
+    "heading": "ይህን መተግበሪያ ይጫኑ",
+    "description": "ከመስመር ውጭ ተደራሽነት እና ፈጣን ተሞክሮ ለማግኘት ይህን መተግበሪያ ይጫኑ።",
+    "install": "ይጫኑ",
+    "dismiss": "ይዝለሉ"
   }
 }

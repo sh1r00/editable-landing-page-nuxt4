@@ -39,30 +39,27 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap' },
       ],
-      htmlAttrs: { lang: 'en' },
     },
   },
 
   i18n: {
     strategy: 'prefix',
     defaultLocale: 'en',
+    lazy: true,
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'es', name: 'Español', file: 'es.json' },
-      { code: 'am', name: 'አማርኛ', file: 'am.json' },
+      { code: 'en', language: 'en', name: 'English', file: 'en.json' },
+      { code: 'es', language: 'es', name: 'Español', file: 'es.json' },
+      { code: 'am', language: 'am', name: 'አማርኛ', file: 'am.json' },
     ],
     langDir: 'locales',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-    },
+    detectBrowserLanguage: false,
   },
 
   pwa: {
     registerType: 'autoUpdate',
     devOptions: { enabled: false },
-    manifest: { name: 'App', short_name: 'App', theme_color: '#000000', background_color: '#ffffff', display: 'standalone' },
+    manifest: { name: 'Sh1r00', short_name: 'Sh1r00', theme_color: '#1e40af', background_color: '#ffffff', display: 'standalone' },
     workbox: { globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2,json}'], navigateFallback: '/', cleanupOutdatedCaches: true, skipWaiting: true, clientsClaim: true,
       runtimeCaching: [
         { urlPattern: /\\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'i18n' } },
@@ -76,7 +73,7 @@ export default defineNuxtConfig({
     headers: process.env.NODE_ENV === "development" ? false : {
       contentSecurityPolicy: {
         'default-src': ["'self'"],
-        'script-src': ["'self'", "'unsafe-inline'"],
+        'script-src': ["'self'", "'strict-dynamic'", "'nonce-{{nonce}}'"],
         'style-src': ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
         'font-src': ["'self'", 'https://fonts.gstatic.com', 'https://fonts.googleapis.com'],
         'img-src': ["'self'", 'data:', 'https:'],
@@ -133,4 +130,5 @@ export default defineNuxtConfig({
       include: ['@vue/devtools-core', '@vue/devtools-kit', 'pinia'],
     },
   },
+  nitro: { prerender: { failOnError: false } },
 })

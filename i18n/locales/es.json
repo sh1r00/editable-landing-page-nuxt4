@@ -277,6 +277,13 @@
     "learnMore": "Más Información",
     "viewAll": "Ver Todo",
     "switchLanguage": "Cambiar idioma",
-    "darkMode": "Modo oscuro"
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro"
+  },
+  "pwa": {
+    "heading": "Instalar esta aplicación",
+    "description": "Instala esta aplicación para acceder sin conexión y disfrutar de una experiencia más rápida.",
+    "install": "Instalar",
+    "dismiss": "Descartar"
   }
 }
