@@ -418,7 +418,8 @@ const getPortfolioIcon = (category: string): string => {
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 800;
   line-height: 1.1;
-  color: var(--color-on-surface);
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
   margin: 0 0 1.25rem;
 }
 
