@@ -57,8 +57,6 @@
       </div>
     </section>
 
-    <MMarquee />
-
     <!-- ===== SERVICES SECTION ===== -->
     <section id="services" class="services section" aria-labelledby="services-heading" style="background-color: var(--color-bg-alt)">
       <div class="container-narrow">
